@@ -30,11 +30,13 @@ To run the application in normal mode:
 
 ```bash
 npm start
+```
 
 To run the application in development mode (watch mode):
 
 ```bash
 npm run dev
+```
 
 ## Accessing the Application
 
