@@ -1,49 +1,63 @@
+import { IncomingMessage, ServerResponse } from "http";
+
 class Route {
-    private _method: string = 'GET';
-    private _path: string = '/';
-    private _controller: string = '';
-    private _function: string = '';
-    private _middleware: string[] = [];
+  private _method: string = "GET";
+  private _path: string = "/";
+  private _controller: string = "";
+  private _function: string = "";
+  private _middleware: string[] = [];
 
-    public getMethod(): string {
-        return this._method;
-    }
+  public execute(request: IncomingMessage, response: ServerResponse): void {
+    const Controller =
+      require(`../../controllers/${this.getControllerName()}`).default;
+    const controllerInstance = new Controller();
+    controllerInstance[this._function](request, response);
+  }
 
-    public getPath(): string {
-        return this._path;
-    }
+  private getControllerName() {
+    const firstChar = this.getController().charAt(0).toUpperCase();
+    return `${firstChar}${this.getController().slice(1)}Controller`;
+  }
 
-    public getController(): string {
-        return this._controller;
-    }
+  public getMethod(): string {
+    return this._method;
+  }
 
-    public getFunction(): string {
-        return this._function;
-    }
+  public getPath(): string {
+    return this._path;
+  }
 
-    public getMiddleware(): string[] {
-        return this._middleware;
-    }
+  public getController(): string {
+    return this._controller;
+  }
 
-    public setMethod(method: string) {
-        this._method = method;
-    }
+  public getFunction(): string {
+    return this._function;
+  }
 
-    public setPath(path: string) {
-        this._path = path;
-    }
+  public getMiddleware(): string[] {
+    return this._middleware;
+  }
 
-    public setController(controller: string) {
-        this._controller = controller;
-    }
+  public setMethod(method: string) {
+    this._method = method;
+  }
 
-    public setFunction(func: string) {
-        this._function = func;
-    }
+  public setPath(path: string) {
+    this._path = path;
+  }
 
-    public setMiddleware(middleware: string[]) {
-        this._middleware = middleware;
-    }
+  public setController(controller: string) {
+    this._controller = controller;
+  }
+
+  public setFunction(func: string) {
+    this._function = func;
+  }
+
+  public setMiddleware(middleware: string[]) {
+    this._middleware = middleware;
+  }
 }
 
 export default Route;

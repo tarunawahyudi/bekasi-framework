@@ -11,4 +11,14 @@ http.createServer((request, response) => {
     func: 'hello',
     middleware: []
   }, request, response);
+
+  Router.add({
+    method: 'GET',
+    path: '/profile',
+    controller: 'profile',
+    func: 'hello',
+    middleware: []
+  }, request, response);
+
+  Router.run(request, response);
 }).listen(port);
