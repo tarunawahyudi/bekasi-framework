@@ -1,8 +1,14 @@
 import http from 'http';
-import Router from './Router';
 import { host, port } from './config/connection';
+import Router from './core/Router';
 
 http.createServer((request, response) => {
-  Router.route(request, response);
-  console.log(`Server run in http://${host}:${port}`);
+  
+  Router.add({
+    method: 'GET',
+    path: '/',
+    controller: 'home',
+    func: 'hello',
+    middleware: []
+  }, request, response);
 }).listen(port);
