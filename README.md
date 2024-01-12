@@ -3,7 +3,7 @@
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-2.0-blue.svg)](https://www.typescriptlang.org/)
 
-My TypeScript MVC Framework is a lightweight web framework built using TypeScript, inspired by CodeIgniter. It follows the Model-View-Controller (MVC) architectural pattern, providing a structured and modular approach to developing web applications.
+Bekasi Framework is a lightweight web framework built using TypeScript, inspired by CodeIgniter. It follows the Model-View-Controller (MVC) architectural pattern, providing a structured and modular approach to developing web applications.
 
 ## Key Features
 
