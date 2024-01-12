@@ -21,4 +21,5 @@ http.createServer((request, response) => {
   }, request, response);
 
   Router.run(request, response);
+  response.end();
 }).listen(port);
