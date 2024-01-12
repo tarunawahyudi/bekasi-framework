@@ -1,8 +1,16 @@
-# Project Name
+# Bekasi Framework
+### Typescript Framework for MVC
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-2.0-blue.svg)](https://www.typescriptlang.org/)
 
-Brief description of your project.
+My TypeScript MVC Framework is a lightweight web framework built using TypeScript, inspired by CodeIgniter. It follows the Model-View-Controller (MVC) architectural pattern, providing a structured and modular approach to developing web applications.
+
+## Key Features
+
+- **TypeScript Support:** Leverage the benefits of static typing for enhanced code quality.
+- **MVC Architecture:** Organize your code into Models, Views, and Controllers for a clear separation of concerns.
+- **Easy Installation:** Quick setup using npm for seamless integration into your projects.
+- **Development Mode:** Utilize the watch mode for efficient development with automatic code reloading.
 
 ## Installation
 
