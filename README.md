@@ -5,6 +5,8 @@
 
 Bekasi Framework is a lightweight web framework built using TypeScript, inspired by CodeIgniter. It follows the Model-View-Controller (MVC) architectural pattern, providing a structured and modular approach to developing web applications.
 
+![hello-bekasi](https://github.com/tarunawahyudi/bekasi-framework/assets/30076511/57c5ee6a-a6b7-4a41-8574-7564fc28f365)
+
 ## Features
 
 - **MVC Architecture**: Organize your code with a Model-View-Controller structure.
