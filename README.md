@@ -56,6 +56,7 @@ The application will be accessible at `http://localhost:${YOUR_PORT}` by default
 
 ## Project Structure
 
+```
 ───src
 │ ├───app
 │ │ ├───config
@@ -66,6 +67,7 @@ The application will be accessible at `http://localhost:${YOUR_PORT}` by default
 │ ├───base
 │ ├───entity
 │ └───utils
+```
 
 ## Usage
 
