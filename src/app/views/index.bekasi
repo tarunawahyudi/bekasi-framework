@@ -29,11 +29,12 @@
       .subheader {
         font-size: 1.5em;
         margin-top: 10px;
+        max-with: 60vw;
       }
     </style>
   </head>
   <body>
     <h1>Hello Bekasi</h1>
-    <p class="subheader">Explanation of Bekasi Framework in English</p>
+    <p class="subheader">Bekasi Framework is a lightweight web framework built using TypeScript</p>
   </body>
 </html>
