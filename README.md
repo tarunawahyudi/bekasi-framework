@@ -82,21 +82,15 @@ Lets create a simple "Hello World" example:
 1. Create a new controller in `src/app/controllers/HomeController.ts`;
 
 ```typescript
-import BaseController from '../../core/base/baseController';
-import { Request, Response } from 'express';
-
 class HomeController extends BaseController {
-  index(req: Request, res: Response): void {
+  public index(req: Request, res: Response) {
     const data = {
       title: 'Welcome to Bekasi Framework',
-      message: 'Hello World!',
+      message: 'Hello World!'
     };
-
-    this.sendHtml(res, 'index', data);
+    this.view(res, 'index', data);
   }
 }
-
-export default new HomeController();
 ```
 
 2. Create a corresponding view in src/app/views/index.bekasi:
