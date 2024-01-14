@@ -5,12 +5,12 @@
     "lib": ["es6"],                     
     "allowJs": true,
     "outDir": "dist",                          
-    "rootDir": "app",
+    "rootDir": "src",
     "strict": true,         
     "noImplicitAny": true,
     "esModuleInterop": true,
     "types": ["node"],
     "skipLibCheck": true
   },
-  "include": ["app/**/*"],
+  "include": ["src/**/*"],
 }
